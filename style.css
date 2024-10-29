@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#matriz {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: repeat(5, 70px);
+    gap: 10px;
+    margin-top: 20px;
+    width: 370px;
+    height: 370px;
+}
+
+.bola {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.bola.azul {
+    background-color: cyan;
+    border: 2px solid #000;
+}
+
+.bola.laranja {
+    background-color: darkorange;
+    border: 2px solid #000;
+}
+
+#linhaSvg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
